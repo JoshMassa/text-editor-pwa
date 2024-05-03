@@ -26,9 +26,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false, // won't generate a random hash after the file name
         inject: true,
-        name: 'My First Progressive Web App',
-        short_name: 'My First PWA',
-        description: 'A little TODOs PWA',
+        name: 'Text Editor Progressive Web App',
+        short_name: 'Text Editor PWA',
+        description: 'An app that allows you to create code snippets or notes without an internet connection',
         background_color: '#7eb4e2',
         orientation: 'portrait',
         display: 'standalone',
