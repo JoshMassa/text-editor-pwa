@@ -3,22 +3,21 @@ const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
-module.exports = () => {
-  return {
+module.exports = {
     mode: 'development',
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
     },
     output: {
-      filename: '[name].bundle.js',
+      filename: '[name]bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: ''
+      publicPath: '',
     },
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Webpack Plugin',
+        title: 'Text Editor PWA',
       }),
       new InjectManifest({
         swSrc: './src-sw.js'
@@ -40,7 +39,7 @@ module.exports = () => {
             destination: path.join('assets', 'icons')
           }
         ],
-      })
+      }),
     ],
 
     module: {
@@ -51,7 +50,7 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-          exclude: /node_modules/,
+          exclude: /node_modules|src-sw.js/,
           use: {
             loader: 'babel-loader',
             options: {
@@ -63,4 +62,3 @@ module.exports = () => {
       ],
     },
   };
-};
