@@ -53,7 +53,7 @@ A Progressive Web Application that offers a rich text editing experience. It all
 
 To view this project's repository, please visit https://github.com/JoshMassa/text-editor-pwa
 
-To use this app in your browser, plase visit 
+To use this app in your browser, please visit https://text-editor-pwa-k5pn.onrender.com/
 
 When using this app in your browser, the webpage should resemble the following image:
 
