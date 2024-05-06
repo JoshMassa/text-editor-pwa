@@ -4,8 +4,8 @@
   "description": "text editor application",
   "main": "server.js",
   "scripts": {
-    "start:dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run server\" ",
-    "start": "npm run build && cd server && node server.js",
+    "start:dev": "npm run build && cd server && node server.js",
+    "start": "concurrently \"cd client && npm run dev\" \"cd server && npm run server\" ",
     "server": "cd server && node server.js",
     "build": "cd client && npm run build",
     "install": "cd server && npm i && cd ../client && npm i",

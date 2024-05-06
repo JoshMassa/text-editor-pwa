@@ -42,5 +42,6 @@
   "display": "standalone",
   "start_url": "/",
   "description": "An app that allows you to create code snippets or notes without an internet connection",
-  "background_color": "#7eb4e2"
+  "background_color": "#7eb4e2",
+  "theme_color": "#7eb4e2"
 }

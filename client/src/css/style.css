@@ -59,6 +59,10 @@
   #buttonInstall.hidden {
     display: none;
   }
+
+  .hidden {
+    display: none;
+  }
   
   @keyframes rotate-forever {
     0% {

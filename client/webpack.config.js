@@ -20,7 +20,7 @@ module.exports = {
         title: 'Text Editor PWA',
       }),
       new InjectManifest({
-        swSrc: './src-sw.js'
+        swSrc: './src-sw.js',
       }),
       new WebpackPwaManifest({
         fingerprints: false, // won't generate a random hash after the file name
@@ -29,6 +29,7 @@ module.exports = {
         short_name: 'Text Editor PWA',
         description: 'An app that allows you to create code snippets or notes without an internet connection',
         background_color: '#7eb4e2',
+        theme_color: "#7eb4e2",
         orientation: 'portrait',
         display: 'standalone',
         start_url: '/',
