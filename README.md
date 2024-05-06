@@ -51,6 +51,18 @@ A Progressive Web Application that offers a rich text editing experience. It all
 
 ## Usage
 
+To view this project's repository, please visit https://github.com/JoshMassa/text-editor-pwa
+
+To use this app in your browser, plase visit 
+
+When using this app in your browser, the webpage should resemble the following image:
+
+![Browser View](./client/src/images/browser-view.png)
+
+When using the installed version of this app, the app should resemble the following image:
+
+![Installed App View](./client/src/images/installed-app-view.png)
+
 1. Code Editing
     
     * Target Users: Developers, programmers, students
